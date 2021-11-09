@@ -18,8 +18,19 @@
 	<p>Ik ben Timen en ik ben een scratch pro <br>Klik op de link hieronder om mijn projecten te zien</p>
 	<a href="games.html">Mijn projecten</a>
 	<br>
-	<!--afbeelding van Thijmen-->
-	<img src="images/timen.jpg" alt="Foto van mij" height="211" width="281">
+	<!--afbeelding van Thijmen, als er op geklikt wordt veranderd hij naar het Mixin' Games logo-->
+	<img id="logoswop" onclick="swapImage()" src="images/timen.jpg" alt="Foto van mij" height="211" width="281">
 	<p style="margin-top: 90px;">Dit is een foto van mij</p>
+	<script>
+		function swapImage() {
+			var imageDisplayed = document.getElementById('logoswop');
+			if (imageDisplayed.src.match("images/timen.jpg")) {
+				imageDisplayed.src = "images/mixingames.jpg";
+			}
+			else {
+				imageDisplayed.src = "images/timen.jpg"
+			}
+		}
+	</script>
 </body>
 </html>
