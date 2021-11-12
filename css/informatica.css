@@ -72,3 +72,9 @@ a:hover {
 .midden {
   text-align: center;
 }
+ol.lista {
+	list-style-type: upper-roman;
+}
+ul.listb {
+	list-style-image: url(https://i.pinimg.com/280x280_RS/54/12/bf/5412bf0754931d70cc2b1b1dd5aa59e4.jpg);
+}
